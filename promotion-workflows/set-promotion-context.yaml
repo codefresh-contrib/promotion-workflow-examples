@@ -20,6 +20,7 @@
 # Notes:
 # - Ensure that the `context-params` input parameter is provided in the correct JSON format.
 # - This template is intended to be used as part of a larger promotion workflow.
+# Example: '{"JIRA_ISSUE_SOURCE_FIELD": "ABC-123", "JIRA_BASE_URL": "https://jira.example.com"}'
 
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
@@ -37,7 +38,7 @@ spec:
         parameters:
           - name: context-params
             description: JSON string of key-value pairs
-            # Example: '{"JIRA_ISSUE_SOURCE_FIELD": "ABC-123", "JIRA_BASE_URL": "https://jira.example.com"}'
+
       script:
         image: alpine
         command: [sh]
