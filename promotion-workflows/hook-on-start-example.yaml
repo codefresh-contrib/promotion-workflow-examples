@@ -2,7 +2,7 @@
 # annotations.codefresh.io/workflow-origin (identifies type of Workflow Template as Promotion Workflow)
 # annotations.version (identifies version of Promotion Workflow used)
 # annotations.description (identifies intended use of the Promotion Workflow)
-# List of parameters avilable for Release OnStart and Environment OnStart Hooks. See full list of parameters in the documentation. <link>
+# List of parameters avilable for Release OnStart and Environment OnStart Hooks. See full list of parameters in the documentation: https://codefresh.io/docs/gitops/promotions/promotion-hooks/#default-arguments-in-promotion-workflows-with-hooks
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
