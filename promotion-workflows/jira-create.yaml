@@ -2,6 +2,7 @@
 # annotations.codefresh.io/workflow-origin (identifies type of Workflow Template as Promotion Workflow)
 # annotations.version (identifies version of Promotion Workflow used)
 # annotations.description (identifies intended use of the Promotion Workflow)
+# Make sure to add 'set-promotion-context' workflow template through the examples section in the UI—this will let you use it.
 apiVersion: argoproj.io/v1alpha1
 kind: WorkflowTemplate
 metadata:
@@ -21,7 +22,6 @@ spec:
             template: create-issue
           - name: set-promotion-context
             templateRef:
-             # Make sure to add this workflow template through the examples section in the UI—this will let you use it.
               name: set-promotion-context
               template: generate-context
             depends: "create-issue.Succeeded"
