@@ -11,7 +11,7 @@ metadata:
     codefresh.io/workflow-origin: promotion
 spec:
   arguments:
-      # List of parameters avilable for Post Action Workflows. See full list of parameters in the documentation. <link>
+      # List of parameters avilable for Post Action Workflows. See full list of parameters in the documentation: https://codefresh.io/docs/gitops/promotions/promotion-hooks/#default-arguments-in-promotion-workflows-with-hooks
 
     parameters:
       - name: APP_NAMESPACE
