@@ -19,12 +19,6 @@ spec:
   entrypoint: starter-manual-sync
   templates:
     - name: starter-manual-sync
-      metadata:
-        annotations:
-          argo-hub-template/description: Sync, wait and send a slack message once the app is synced
-          argo-hub-template/icon_url: >-
-            https://cdn.jsdelivr.net/gh/codefresh-io/argo-hub@main/examples/starter-manual-sync/assets/icon.svg
-          argo-hub-template/icon_background: '#f4f4f4'
       dag:
         tasks:
           - name: sync
